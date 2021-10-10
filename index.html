@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase Authentication</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
+    
+   <script>
+   const firebaseConfig = {
+    apiKey: "AIzaSyDAolkdlWtOZFPaSv3lmQueyBGyRII0UDo",
+    authDomain: "fir-authentication-basic-37ef7.firebaseapp.com",
+    projectId: "fir-authentication-basic-37ef7",
+    storageBucket: "fir-authentication-basic-37ef7.appspot.com",
+    messagingSenderId: "69365423203",
+    appId: "1:69365423203:web:70c7566fa8f1f4ec85ac56",
+    measurementId: "G-KXZE6BZDLX"
+  };
+
+  // Initialize Firebase
+//   const app = initializeApp(firebaseConfig);
+//   const analytics = getAnalytics(app);
+firebase.initializeApp(firebaseConfig);
+//firebase.analytics();
+</script> 
+     
+   
+</head>
+<body>
+    
+  <div class="div1">
+      <h2 class="em">Sign Up Pannel</h2>
+      <input type="email" name="email" id="Email" placeholder="Enter your EMAIL">  <br>  <br>
+      <input type="password" name="password" id="PASS" placeholder="Enter your Password"> <br> <br>
+      <button  class="hp"onclick="press();">Sign Up</button>
+  </div>
+
+<br>
+
+<br>
+<br>
+
+  <div  class="div2">
+    <h2 class="em">Login Pannel</h2>
+    <input type="email" name="email" id="Email-login" placeholder="Enter your EMAIL">  <br>  <br>
+    <input type="password" name="password" id="PASS-login" placeholder="Enter your Password"> <br> <br>
+    <button class="hp" onclick="login();">LOGIN</button>
+</div>
+
+     <style>
+      .div1{
+          text-align: center;
+          margin-top: 5em;
+      }
+
+      .div2{
+          text-align: center;
+          margin-top: 2em;
+      }
+      body{
+          background-image: url(images/img.png.jpg);
+      }
+      #Email{
+           width: 20em;
+           height: 2em;
+      }
+      #Email:hover{
+          background-color:khaki;
+      }
+      #PASS{
+           width: 20em;
+           height: 2em;
+      }
+      #PASS:hover{
+        background-color:khaki;
+      }
+   
+      #Email-login{
+        width: 20em;
+           height: 2em;
+      }
+      #Email-login:hover{
+        background-color:khaki;
+      }
+      #PASS-login{
+        width: 20em;
+           height: 2em;
+      }
+      #PASS-login:hover{
+        background-color:khaki;
+      }
+      .hp:hover{
+          width:7em;
+          background-color:red;
+      }
+      .em{
+          color: chartreuse;
+      }
+     </style>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
